@@ -189,26 +189,28 @@ style = p.Restults.style;
 
 ## 测试函数
 
-是的，函数我给你们写好了。来测试一番吧。
+是的，函数我给你们写好了。这个函数存放在这个markdown文档的同级目录下，来测试一番吧。
 
 
 
 ```matlab
-%CreateFunction('test1')
-%CreateFunction('test1')   % will get an error since test1.m already created
-%mkdir('sub')
-%CreateFunction('test2','sub')  % create in a different path
-%CreateFunction('test2','sub2')  % create in a non-existent path, will popup at window
+CreateFunction('test1')
+CreateFunction('test1')   % will get an error since test1.m already created
+mkdir('sub')
+CreateFunction('test2','sub')  % create in a different path
+CreateFunction('test2','sub2')  % create in a non-existent path, will popup at window
 
 % will get an error since parser interpret 'style' as fpath, and compact as name of name-value pair
-%CreateFunction('test3','style','compact')  
+CreateFunction('test3','style','compact')  
 
 % correct way of optional + name-value pair 
-%CreateFunction('test3','.','style','compact')  
-%CreateFunction('test4','.','style','standard')
-%CreateFunction('test5','.','style','extended')
+CreateFunction('test3','.','style','compact')  
+CreateFunction('test4','.','style','standard')
+CreateFunction('test5','.','style','extended')
 
 ```
 
-    
+## 作业题
+1. 给函数增加'author'可选输入参数，用name-value模式。
+2. 用CreateFunction函数生成它自己的函数头（我没写因为我懒），要求用'extended'风格，并填写好输入输出等注释。
     

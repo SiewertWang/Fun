@@ -1,24 +1,5 @@
 function [] = CreateFunction(fname,varargin)
-%CREATE_FUNCTION A function to create matlab function file, setup the header
-%   Detailed explanation goes here
-% Syntax: [] = create_function(fname,fpath)
-%
-% Input:
-%    fname - function name, string   
-%    fpath - path to put the function, string
-%
-% Output:
-%    N/A
-%
-% Examples: 
-%    create_function('readme.m')
-%    create_function('readme')
-%    create_function('readme','./')
 
-% Weilun Qin (WQ)
-% Created: 11-Sep-2018
-
-%------------- CODE BEGINS ----------------
 % parse the input
 p = inputParser;
 
